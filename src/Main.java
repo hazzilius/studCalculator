@@ -4,10 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите первое число: ");
-        int num1 = scan.nextInt();
+        double num1 = scan.nextDouble();
         System.out.print("Введите второе число: ");
-        int num2 = scan.nextInt();
-        int result;
+        double num2 = scan.nextDouble();
         System.out.print("""
                 1) +
                 2) -
@@ -22,11 +21,9 @@ public class Main {
                 break;
             case 2:
                 System.out.println("\n" + num1 + " - " + num2 + " = " + Min(num1, num2));
-                System.out.println("Операция вычитания");
                 break;
             case 3:
-                //TODO div
-                System.out.println("Операция деления");
+                System.out.println("\n" + num1 + " / " + num2 + " = " + Div(num1, num2));
                 break;
             case 4:
                 //TODO mul
@@ -38,11 +35,15 @@ public class Main {
         }
     }
 
-    static int Sum(int num1, int num2){
+    static double Sum(double num1, double num2){
         return num1 + num2;
     }
 
-    static int Min(int num1, int num2){
+    static double Min(double num1, double num2){
         return num1 - num2;
+    }
+
+    static double Div(double num1, double num2){
+        return num1 / num2;
     }
 }
