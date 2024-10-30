@@ -21,7 +21,7 @@ public class Main {
                 System.out.println("\n" + num1 + " + " + num2 + " = " + Sum(num1, num2));
                 break;
             case 2:
-                //TODO min
+                System.out.println("\n" + num1 + " - " + num2 + " = " + Min(num1, num2));
                 System.out.println("Операция вычитания");
                 break;
             case 3:
@@ -40,5 +40,9 @@ public class Main {
 
     static int Sum(int num1, int num2){
         return num1 + num2;
+    }
+
+    static int Min(int num1, int num2){
+        return num1 - num2;
     }
 }
