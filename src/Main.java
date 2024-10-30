@@ -26,8 +26,7 @@ public class Main {
                 System.out.println("\n" + num1 + " / " + num2 + " = " + Div(num1, num2));
                 break;
             case 4:
-                //TODO mul
-                System.out.println("Операция умножения");
+                System.out.println("\n" + num1 + " * " + num2 + " = " + Mul(num1, num2));
                 break;
             default:
                 System.out.print("Неправильный номер операции!");
@@ -45,5 +44,9 @@ public class Main {
 
     static double Div(double num1, double num2){
         return num1 / num2;
+    }
+
+    static double Mul(double num1, double num2){
+        return num1 * num2;
     }
 }
