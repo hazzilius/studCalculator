@@ -7,6 +7,7 @@ public class Main {
         int num1 = scan.nextInt();
         System.out.print("Введите второе число: ");
         int num2 = scan.nextInt();
+        int result;
         System.out.print("""
                 1) +
                 2) -
@@ -17,8 +18,7 @@ public class Main {
         int option = scan.nextInt();
         switch (option){
             case 1:
-                //TODO sum
-                System.out.println("Операция сложения");
+                System.out.println("\n" + num1 + " + " + num2 + " = " + Sum(num1, num2));
                 break;
             case 2:
                 //TODO min
@@ -36,5 +36,9 @@ public class Main {
                 System.out.print("Неправильный номер операции!");
                 break;
         }
+    }
+
+    static int Sum(int num1, int num2){
+        return num1 + num2;
     }
 }
